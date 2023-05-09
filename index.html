@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RGR_KI-202_Moroz</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+
+    <script>
+        function log(event) {
+          event.preventDefault(); // stop form submission
+          let password = document.getElementById("password").value;
+          let email = document.getElementById("email").value;
+          loginUser(email, password);
+        }
+      
+        function loginUser(email, password) {
+    if ((email == "masha@gmail.com" && password == "qwerty123") ||
+        (email == "dima@gmail.com" && password == "12345") ||
+        (email == "tana@gmail.com" && password == "123qwerty") ||
+        (email == "mas1@gmail.com" && password == "1qwerty123") ||
+        (email == "katya1@gmail.com" && password == "112345") ||
+        (email == "lena@gmail.com" && password == "1123qwerty") ||
+        (email == "vanya@gmail.com" && password == "2qwerty123")) {
+        window.location.replace("javascript.html");
+    } else {
+        alert("Incorrect email or password. Please try again.");
+    }
+}
+      </script>
+      
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="title-block">
+                <h1 class="title">RGR_KI-202_Moroz</h1>
+            </div>
+            <div class="userpic"></div>
+        </div>
+        <div class="nav">
+            <ul>
+                <li><a href="#">Main Info</a></li>
+                <li><a href="#">About Me</a></li>
+                <li><a href="#">Contact Page</a></li>
+            </ul>
+        </div>
+        <div class="content-wrapper">
+            <div class="content">
+				<h1>Ласкаво просимо!</h1><br>
+	<p>Введіть пароль та електронну пошту, щоб увійти на сторінку "Робота з Javascript".</p><br>
+	<form>
+		<label>Пароль:</label>
+		<input type="password" id="password" required><br><br>
+		<label>Електронна пошта:</label>
+		<input type="email" id="email" required><br><br>
+		<input type="submit" value="Увійти" onclick="log(event)"><br>
+        <br>
+	</form>
+
+	
+
+            <h3>Main Info</h3>
+                <p>HTML(англ. HyperText Markup Language — мова розмітки гіпертексту) — стандартизована мова розмітки документів для перегляду вебсторінок у браузері.
+                     Браузери отримують HTML документ від сервера за протоколами HTTP/HTTPS або відкривають з локального диска, далі інтерпретують код в інтерфейс, який відображатиметься на екрані монітора. </p>
+                <br>
+                <p>CSS (англ. Cascading Style Sheets, укр. Каскадні таблиці стилів) — це спеціальна мова стилю сторінок, що використовується для опису їхнього зовнішнього вигляду. Самі ж сторінки написані мовами розмітки даних.
+                    CSS є основною технологією всесвітньої павутини, поряд із HTML та JavaScript.                  
+                    Найчастіше CSS використовують для візуальної презентації сторінок, написаних HTML та XHTML, але формат CSS може застосовуватися до інших видів XML-документів.                   
+                    Специфікації CSS були створені та розвиваються Консорціумом Всесвітньої мережі.         
+                    CSS має різні рівні та профілі. Наступний рівень CSS створюється на основі попередніх, додаючи нову функціональність або розширюючи вже наявні функції. Рівні позначаються як CSS1, CSS2 та CSS3.
+                     Профілі — сукупність правил CSS одного або більше рівнів, створені для окремих типів пристроїв або інтерфейсів. Наприклад, існують профілі CSS для принтерів, мобільних пристроїв тощо. </p>
+                <br>
+                <p>JavaScript (JS) — динамічна, об'єктно-орієнтована прототипна мова програмування. Реалізація стандарту ECMAScript.
+                    Найчастіше використовується для створення сценаріїв вебсторінок, що надає можливість на боці клієнта (пристрої кінцевого користувача)
+                    взаємодіяти з користувачем, керувати браузером, асинхронно обмінюватися даними з сервером, змінювати структуру та зовнішній вигляд вебсторінки.
+                    JavaScript класифікують як прототипну (підмножина об'єктно-орієнтованої), скриптову мову програмування з динамічною типізацією. Окрім прототипної,
+                    JavaScript також частково підтримує інші парадигми програмування (імперативну та частково функціональну) і деякі відповідні архітектурні властивості,
+                    зокрема: динамічна та слабка типізація, автоматичне керування пам'яттю, прототипне наслідування, функції як об'єкти першого класу. </p>
+            </div>
+            <div class="sidebar">
+                <h3>Skills</h3>
+                <ul class="skills">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>JQuerry</li>
+                    <li>Vue JS</li>
+                    <li>VueX</li>
+                    <li>CMS WordPress</li>
+                    <li>Git</li>
+                    <li>Adobe Photoshop</li>
+                    <li>Rest API</li>
+                </ul>
+                <br>
+
+                <h3>Hobbies</h3>
+                <ul class="skills">
+                    <li>Football</li>
+                    <li>Basketball</li>
+                    <li>Table tennis</li>
+                    <li>Python programming</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
