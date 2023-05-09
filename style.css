@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+
+body{
+    font-family: 'Raleway', sans-serif;
+    background: url(https://phonoteka.org/uploads/posts/2022-01/thumbs/1642747755_9-phonoteka-org-p-belii-fon-dlya-saita-9.jpg);
+    background-size: 100%;
+    padding: 80px 0;
+}
+
+h3{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.container{
+    width: 800px;
+    min-height: 500px;
+    border: 10px solid #fff;
+    margin: 0 auto;
+    background: #fff;
+}
+
+.header{
+    display: flex;
+    height: 150px;
+}
+
+.title-block{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    width: 80%;
+    height: 100%;
+    background: url(https://www.lighthouselabs.ca/uploads/post/open_graph_image/459/Coding-vs-programming.jpg) no-repeat center center / cover;
+    color: #fff;
+    margin-right: 10px;
+}
+
+.title-block::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: 0.5;
+}
+
+.title{
+    position: relative;
+    z-index: 1;
+}
+
+.userpic{
+    display: flex;
+    height: 100%;
+    width: 20%;
+    background: url(https://wallpaperaccess.com/full/621537.jpg) no-repeat center center / cover;
+}
+
+.nav ul{
+    display: flex;
+    background: rgb(230, 230, 230);
+    margin: 10px 0;
+}
+
+.nav li a{
+    display: flex;
+    padding: 20px;
+    text-decoration: none;
+    color: #404040;
+    font-weight: bold;
+    border-right: 1px solid #d1d1d1;
+    transition: background .3s ease;
+}
+
+.nav li a:hover{
+    background: rgb(196, 196, 196);
+}
+
+.content-wrapper{
+    display: flex;
+}
+
+.content{
+    width: 70%;
+    padding: 20px;
+}
+
+.content p{
+    line-height: 20px;
+}
+
+.sidebar{
+    padding: 20px;
+    width: 30%;
+}
+
+.skills li{
+    padding: 10px 0;
+    transition: transform .5s ease;
+    cursor: pointer;
+}
+
+.skills li:hover{
+    transform: translateX(10px);
+}
